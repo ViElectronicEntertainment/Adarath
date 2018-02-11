@@ -40,6 +40,9 @@ Todos los cambios notables de este proyecto estan documentadas en este archivo.
 
 ## [0.0.1.9] - 2018-02-10
 
+### Added
+-- Se agrego la dependencia Laravel Collective
+
 ### Update
 -- Se han actualizado el core de PAMI de Laravel 5.5 a 5.6
 

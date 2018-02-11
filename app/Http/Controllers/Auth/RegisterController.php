@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace pami\Http\Controllers\Auth;
 
-use App\User;
-use App\Http\Controllers\Controller;
+use pami\User;
+use pami\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
@@ -58,7 +58,7 @@ class RegisterController extends Controller
      * Create a new user instance after a valid registration.
      *
      * @param  array  $data
-     * @return \App\User
+     * @return \pami\User
      */
     protected function create(array $data)
     {
@@ -66,6 +66,18 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
-        ]);
+            //Inicializacion de las Varibles Blinter Profile
+            'leadership' => '1',
+            'innovation' => '1',
+            'teamwork' => '1',
+            'management' => '1',
+            'design' => '1',
+            'development' => '1',
+            'problemresolution' => '1',
+            'sales' => '1',
+            'communication' => '1',
+            'community' => '1',
+            'level' => '1',
+            'experience' => '0']);
     }
 }

@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+//Blinter Profile
+Auth::routes();
+Route::get('/home', 'HomeController@index')->name('home');
+Route::view('/profile', 'blinterprofile.profile');
+
+Auth::routes();
