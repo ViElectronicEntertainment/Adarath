@@ -78,6 +78,9 @@ class RegisterController extends Controller
             'communication' => '1',
             'community' => '1',
             'level' => '1',
-            'experience' => '0']);
+            'experience' => '0',
+            //Campos Perfil
+            'bio' => '',
+            'file' => '']);
     }
 }

@@ -15,6 +15,9 @@ $comunicacion = Auth::user()->communication;
 $comunidad = Auth::user()->community;
 $nivel = Auth::user()->level;
 $exp = Auth::user()->experience;
+$bio = Auth::user()->bio;
+$rol = Auth::user()->rol;
+$file = Auth::user()->file;
 $total = $liderazgo + $innovacion + $equipo + $gestion + $diseno + $desarrollo + $problemas + $ventas + $comunicacion + $comunidad;
 ?>
     @extends('layouts.app')

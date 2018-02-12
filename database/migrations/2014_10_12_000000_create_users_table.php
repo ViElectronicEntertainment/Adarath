@@ -20,6 +20,10 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
+            //User Data
+            $table->mediumText('bio')->nulleable();
+            $table->enum('rol',['Alpha-Tester', 'Administrador'])->default('Alpha-Tester');
+            $table->string('file')->nulleable();
             //Blinter Skills
             $table->integer('leadership');
             $table->integer('innovation');
